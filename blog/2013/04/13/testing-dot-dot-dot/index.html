@@ -9,23 +9,8 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="How does code look? 1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-Pod::Spec.new do |s| s.name = &quot;vMAT&quot; s.version = &quot;0.0.1&quot; s.summary = & &hellip;">
+  <meta name="description" content="How does code look?
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;&lt;figcaption&gt;&lt;/figcaption&gt;&lt;div class=&#8221;highlight&#8221;&gt;&lt; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,46 +92,52 @@ Pod::Spec.new do |s| s.name = &quot;vMAT&quot; s.version = &quot;0.0.1&quot; s.s
   </header>
 
 
-<div class="entry-content"><p>How does code look?</p>
+<div class="entry-content"><p>How does code look?
+&lt;div class=&#8217;bogus-wrapper&#8217;&gt;<notextile><figure class="code">&lt;figcaption&gt;<span></span>&lt;/figcaption&gt;&lt;div class=&#8221;highlight&#8221;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#8221;gutter&#8221;&gt;&lt;pre class=&#8221;line-numbers&#8221;&gt;<span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+<span class="line-number">11</span>
+<span class="line-number">12</span>
+<span class="line-number">13</span>
+<span class="line-number">14</span>
+<span class="line-number">15</span>
+<span class="line-number">16</span>
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#8217;code&#8217;&gt;&lt;pre&gt;<code class="ruby"><span class="line"><span class="ss">Pod</span><span class="p">:</span><span class="ss">:Spec</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="n">s</span><span class="o">|</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">name</span>         <span class="o">=</span> <span class="s2">&quot;vMAT&quot;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">version</span>      <span class="o">=</span> <span class="s2">&quot;0.0.1&quot;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">summary</span>      <span class="o">=</span> <span class="s2">&quot;The vMAT library implements a grab-bag of mathematical functions inspired by MATLAB.&quot;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">homepage</span>     <span class="o">=</span> <span class="s2">&quot;http://kaelin.github.io/vMAT/&quot;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">license</span>      <span class="o">=</span> <span class="s1">&#39;BSD 2-Clause&#39;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">author</span>       <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Kaelin Colclasure&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;kaelin@acm.org&quot;</span> <span class="p">}</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">source</span>       <span class="o">=</span> <span class="p">{</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s2">&quot;https://github.com/kaelin/vMAT.git&quot;</span><span class="p">,</span> <span class="ss">:tag</span> <span class="o">=&gt;</span> <span class="s2">&quot;0.0.1&quot;</span> <span class="p">}</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">platform</span>     <span class="o">=</span> <span class="ss">:osx</span><span class="p">,</span> <span class="s1">&#39;10.8&#39;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">source_files</span> <span class="o">=</span> <span class="s1">&#39;vMAT&#39;</span><span class="p">,</span> <span class="s1">&#39;vMAT/**/*.{h,m}&#39;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">frameworks</span> <span class="o">=</span> <span class="s1">&#39;Accelerate&#39;</span><span class="p">,</span> <span class="s1">&#39;Foundation&#39;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">requires_arc</span> <span class="o">=</span> <span class="kp">true</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">xcconfig</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;CLANG_CXX_LANGUAGE_STANDARD&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;gnu++0x&#39;</span><span class="p">,</span> <span class="s1">&#39;CLANG_CXX_LIBRARY&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;libc++&#39;</span> <span class="p">}</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">dependency</span> <span class="s1">&#39;BlocksKit&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.8.1&#39;</span>
+</span><span class="line">  <span class="n">s</span><span class="o">.</span><span class="n">dependency</span> <span class="s1">&#39;eigen&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.1.2&#39;</span>
+</span><span class="line"><span class="k">end</span>
+</span></code>&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</figure></notextile>&lt;/div&gt;</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">Pod</span><span class="p">:</span><span class="ss">:Spec</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="n">s</span><span class="o">|</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">name</span>         <span class="o">=</span> <span class="s2">&quot;vMAT&quot;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">version</span>      <span class="o">=</span> <span class="s2">&quot;0.0.1&quot;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">summary</span>      <span class="o">=</span> <span class="s2">&quot;The vMAT library implements a grab-bag of mathematical functions inspired by MATLAB.&quot;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">homepage</span>     <span class="o">=</span> <span class="s2">&quot;http://kaelin.github.io/vMAT/&quot;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">license</span>      <span class="o">=</span> <span class="s1">&#39;BSD 2-Clause&#39;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">author</span>       <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;Kaelin Colclasure&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;kaelin@acm.org&quot;</span> <span class="p">}</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">source</span>       <span class="o">=</span> <span class="p">{</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s2">&quot;https://github.com/kaelin/vMAT.git&quot;</span><span class="p">,</span> <span class="ss">:tag</span> <span class="o">=&gt;</span> <span class="s2">&quot;0.0.1&quot;</span> <span class="p">}</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">platform</span>     <span class="o">=</span> <span class="ss">:osx</span><span class="p">,</span> <span class="s1">&#39;10.8&#39;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">source_files</span> <span class="o">=</span> <span class="s1">&#39;vMAT&#39;</span><span class="p">,</span> <span class="s1">&#39;vMAT/**/*.{h,m}&#39;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">frameworks</span> <span class="o">=</span> <span class="s1">&#39;Accelerate&#39;</span><span class="p">,</span> <span class="s1">&#39;Foundation&#39;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">requires_arc</span> <span class="o">=</span> <span class="kp">true</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">xcconfig</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;CLANG_CXX_LANGUAGE_STANDARD&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;gnu++0x&#39;</span><span class="p">,</span> <span class="s1">&#39;CLANG_CXX_LIBRARY&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;libc++&#39;</span> <span class="p">}</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">dependency</span> <span class="s1">&#39;BlocksKit&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 1.8.1&#39;</span>
-</span><span class='line'>  <span class="n">s</span><span class="o">.</span><span class="n">dependency</span> <span class="s1">&#39;eigen&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.1.2&#39;</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
+<p>And what happens when you add a footnote?<sup id="fnref:fn"><a href="#fn:fn" rel="footnote">1</a></sup> And then perhaps another?[^fn]</p>
 
-
-<p>And what happens when you add a footnote?<a href="A">^fn</a> And then perhaps another?<a href="A">^fn</a></p>
-
-<p>footnotes, so here we are…</p>
+<p>footnotes, so here we are…
+[^fn]: A second footnote, just for good measure.</p>
+<div class="footnotes">
+  <ol>
+    <li id="fn:fn">
+      <p>Most of the markdown processors don’t seem to handle footnotes. And I like to use <a href="#fnref:fn" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 </div>
 
 
